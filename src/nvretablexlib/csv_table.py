@@ -96,9 +96,9 @@ class CsvTable:
 
                 if hasSubplot and not arcs:
                     arcs.append('Subplot')
-                for scId in scnArcs:
-                    if self.novel.scenes[scId].isSubPlot:
-                        scnArcs[scId] = ['Subplot']
+                    for scId in scnArcs:
+                        if self.novel.scenes[scId].isSubPlot:
+                            scnArcs[scId] = ['Subplot']
 
                 # Title row.
                 row = []

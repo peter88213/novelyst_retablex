@@ -4,6 +4,11 @@
 
 ## Changelog
 
+### v0.2.1 
+
+- Fix a bug where arc references are missing for "subplot" scenes.
+
+Compatibility: novelyst v4.0 API
 
 ### v0.2.0 
 

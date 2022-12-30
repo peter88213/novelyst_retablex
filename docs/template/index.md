@@ -6,6 +6,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 
 
 ![Screenshot](Screenshots/screen01.png)
+![Screenshot](Screenshots/screen02.png)
 
 ## Features
 
