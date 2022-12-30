@@ -2,37 +2,19 @@
 
 --- 
 
-A plugin providing a scene relationship matrix for [novelyst](https://peter88213.github.io/novelyst/).
+A plugin providing a csv relationship table export for novelyst.
 
 ### Installation
 
 If [novelyst](https://peter88213.github.io/novelyst/) is installed, the setup script auto-installs the *novelyst_retablex* plugin in the *novelyst* plugin directory.
 
-The plugin adds a "Matrix" entry to the *novelyst* "Tools" menu. 
+- The plugin adds a "Relationship table export" submenu to the *novelyst* "Export" menu.
 
 
-## Usage
+## "Relationship table export" Submenu entries
 
-### Starting the program
-
-- Start the matrix manager from the main menu: **Tools > Matrix**.
-
-### Operation
-
-#### Mouse wheel
-
-- Use the mouse wheel for vertical scrolling.
-- Use the mouse wheel with the `Shift` key pressed for horizontal scrolling.    
-
-#### Add/remove relationships
-
-- Add/Remove relationships by klicking on the nodes with the `Ctrl` key pressed.
-
-
-### Exit 
-
-- When closing the window, you are asked whether changes shall be applied to the project.
-
+- *csv* -- Export a comma-separated file, utf-8 encoded.
+- *csv (Excel)* -- Export a tab-separated file, utf-16 encoded.
 
 ## License
 
