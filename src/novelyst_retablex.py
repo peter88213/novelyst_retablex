@@ -49,10 +49,7 @@ class Plugin:
     """novelyst relationship table export plugin class.
     
     Public methods:
-        disable_menu() -- disable menu entries when no project is open.
-        enable_menu() -- enable menu entries when a project is open.   
         on_quit() -- Apply changes and close the window.
-        on_close() -- Apply changes and close the window.
     """
     VERSION = '@release'
     NOVELYST_API = '4.0'
@@ -60,7 +57,7 @@ class Plugin:
     URL = 'https://peter88213.github.io/novelyst_retablex'
 
     def install(self, ui):
-        """Add a "Relationship table" submenu to the 'Export' menu.
+        """Add a "Relationship table export" submenu to the 'Export' menu.
         
         Positional arguments:
             ui -- reference to the NovelystTk instance of the application.
@@ -111,8 +108,10 @@ class Plugin:
             self._ui.set_info_how(message)
 
     def on_quit(self):
-        """Actions to be performed when novelyst is closed."""
-        #--- Save project specific configuration
+        """Actions to be performed when novelyst is closed.
+        
+        Save the project specific configuration
+        """
         for keyword in self.kwargs:
             if keyword in self.configuration.options:
                 self.configuration.options[keyword] = self.kwargs[keyword]
