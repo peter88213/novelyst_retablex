@@ -5,9 +5,9 @@ License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import sys
 import tkinter as tk
+from pywriter.pywriter_globals import *
 from pywriter.ui.main_tk import MainTk
 from novelyst_retablex import Plugin
-from nvmatrixlib.nvmatrix_globals import *
 
 APPLICATION = 'Matrix'
 
@@ -28,7 +28,7 @@ class TableManager(MainTk):
         self.plugin = Plugin()
         self.plugin.install(self)
 
-    def apply_changes(self):
+    def refresh_tree(self):
         """Dummy"""
 
 

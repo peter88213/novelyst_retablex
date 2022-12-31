@@ -7,15 +7,15 @@ For more information, see the [project homepage](https://peter88213.github.io/no
 
 ## Development
 
-*novelyst_retablex* depends on the [novelyst_matrix](https://github.com/peter88213/novelyst_matrix) library which must be present in your file system. It is organized as an Eclipse PyDev project. The official release branch on GitHub is *main*.
+*novelyst_retablex* depends on the [pywriter](https://github.com/peter88213/PyWriter) library which must be present in your file system. It is organized as an Eclipse PyDev project. The official release branch on GitHub is *main*.
 
 ### Mandatory directory structure for building the application script
 
 ```
 .
-├── novelyst_matrix/
+├── PyWriter/
 │   └── src/
-│       └── nvmatrixlib/
+│       └── pywriter/
 └── novelyst_retablex/
     ├── src/
     ├── test/

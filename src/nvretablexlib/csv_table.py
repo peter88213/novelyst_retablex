@@ -5,7 +5,7 @@ For further information see https://github.com/peter88213/yw-table
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 import csv
-from nvmatrixlib.nvmatrix_globals import *
+from pywriter.pywriter_globals import *
 
 
 class CsvTable:

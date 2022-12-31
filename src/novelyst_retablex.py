@@ -12,8 +12,8 @@ import locale
 from pathlib import Path
 import tkinter as tk
 from pywriter.converter.export_target_factory import ExportTargetFactory
-from nvmatrixlib.nvmatrix_globals import *
-from nvmatrixlib.configuration import Configuration
+from pywriter.pywriter_globals import *
+from pywriter.config.configuration import Configuration
 from nvretablexlib.csv_table import CsvTable
 
 SETTINGS = dict(
