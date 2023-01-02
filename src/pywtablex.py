@@ -9,7 +9,7 @@ from pywriter.pywriter_globals import *
 from pywriter.ui.main_tk import MainTk
 from novelyst_retablex import Plugin
 
-APPLICATION = 'Matrix'
+APPLICATION = 'Relationship table export'
 
 
 class TableManager(MainTk):
@@ -24,6 +24,10 @@ class TableManager(MainTk):
         # Export
         self.exportMenu = tk.Menu(self.mainMenu, tearoff=0)
         self.mainMenu.add_cascade(label=_('Export'), menu=self.exportMenu)
+
+        # Help
+        self.helpMenu = tk.Menu(self.mainMenu, tearoff=0)
+        self.mainMenu.add_cascade(label=_('Help'), menu=self.helpMenu)
 
         self.plugin = Plugin()
         self.plugin.install(self)

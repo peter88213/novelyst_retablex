@@ -10,6 +10,7 @@ import os
 import gettext
 import locale
 from pathlib import Path
+import webbrowser
 import tkinter as tk
 from pywriter.converter.export_target_factory import ExportTargetFactory
 from pywriter.pywriter_globals import *
@@ -59,6 +60,7 @@ class Plugin:
     NOVELYST_API = '4.0'
     DESCRIPTION = 'A relationship table exporter'
     URL = 'https://peter88213.github.io/novelyst_retablex'
+    _HELP_URL = 'https://peter88213.github.io/novelyst_retablex/usage'
 
     def install(self, ui):
         """Add a "Relationship table export" submenu to the 'Export' menu.
@@ -82,13 +84,16 @@ class Plugin:
         self.kwargs.update(self.configuration.settings)
         self.kwargs.update(self.configuration.options)
 
-        # Create a submenu
+        # Add a submenu to the Export menu.
         retablexMenu = tk.Menu(tearoff=0)
         self._ui.exportMenu.add_separator()
         self._ui.exportMenu.add_cascade(label=APPLICATION, menu=retablexMenu)
         self._ui.exportMenu.entryconfig(APPLICATION, state='normal')
         retablexMenu.add_command(label='csv', command=lambda: self._export_table('excel', 'utf-8'))
         retablexMenu.add_command(label='csv (Excel)', command=lambda:self._export_table('excel-tab', 'utf-16'))
+
+        # Add an entry to the Help menu.
+        self._ui.helpMenu.add_command(label=_('Relationship table export plugin Online Help'), command=lambda: webbrowser.open(self._HELP_URL))
 
     def _export_table(self, csvDialect, csvEncoding):
         """Export the table as a csv file."""
