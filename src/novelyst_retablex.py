@@ -29,6 +29,7 @@ SETTINGS = dict(
     )
 OPTIONS = dict(
     csv_row_numbers=True,
+    csv_arc_points=True,
     )
 
 # Initialize localization.

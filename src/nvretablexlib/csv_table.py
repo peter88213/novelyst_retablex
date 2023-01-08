@@ -51,6 +51,7 @@ class CsvTable:
         self._csvRowNumbers = kwargs.get('csv_row_numbers', True)
         self._csvDialect = kwargs.get('csv_dialect', 'ecxel')
         self._csvEncoding = kwargs.get('csv_encoding', 'utf-8')
+        self._csv_arcPoints = kwargs.get('csv_arc_points', False)
 
     @property
     def filePath(self):
@@ -84,6 +85,7 @@ class CsvTable:
                 hasSubplot = False
                 arcs = []
                 scnArcs = {}
+                scnPoints = {}
                 for chId in self.novel.srtChapters:
                     for scId in self.novel.chapters[chId].srtScenes:
                         if self.novel.scenes[scId].scType == 0:
@@ -123,7 +125,17 @@ class CsvTable:
                     row.append(self.novel.scenes[scId].title)
                     for arc in arcs:
                         if arc in scnArcs[scId]:
-                            row.append(self._csvArcTrue)
+                            entry = self._csvArcTrue
+                            if self._csv_arcPoints:
+                                # Use arc point titles instead of binary marker.
+                                pointIds = string_to_list(self.novel.scenes[scId].kwVar.get('Field_SceneAssoc', None))
+                                points = []
+                                for ptId in pointIds:
+                                    if arc in self.novel.scenes[ptId].scnArcs:
+                                        points.append(self.novel.scenes[ptId].title)
+                                if points:
+                                    entry = list_to_string(points)
+                            row.append(entry)
                         else:
                             row.append(self._csvArcFalse)
                     for crId in self.novel.srtCharacters:
