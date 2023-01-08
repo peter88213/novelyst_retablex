@@ -85,7 +85,6 @@ class CsvTable:
                 hasSubplot = False
                 arcs = []
                 scnArcs = {}
-                scnPoints = {}
                 for chId in self.novel.srtChapters:
                     for scId in self.novel.chapters[chId].srtScenes:
                         if self.novel.scenes[scId].scType == 0:
