@@ -15,7 +15,7 @@ class CsvTable:
         write() -- Write instance variables to the file.
 
     Public instance variables:
-        filePath -- str: path to the file (property with getter and setter). 
+        filePath: str -- path to the file (property with getter and setter). 
 
     Uses the conventions for Excel-generated CSV files.
     """
@@ -27,7 +27,7 @@ class CsvTable:
         """Initialize instance variables.
 
         Positional arguments:
-            filePath -- str: path to the file represented by the File instance.
+            filePath: str -- path to the file represented by the File instance.
             
         Optional arguments:
             kwargs -- keyword arguments to be used by subclasses.  
