@@ -4,6 +4,11 @@
 
 ## Changelog
 
+### v1.0.0
+
+Based on PyWriter v12.4.1
+Compatibility: novelyst v4.0 API
+
 ### v0.4.0 Beta
 
 - Optionally show arc points, if any.
