@@ -1,4 +1,4 @@
-""" Build a matrix  novelyst plugin.
+"""Build a matrix novelyst plugin.
         
 In order to distribute a single script without dependencies, 
 this script "inlines" all modules imported from the pywriter package.
@@ -6,6 +6,7 @@ this script "inlines" all modules imported from the pywriter package.
 The PyWriter project (see https://github.com/peter88213/PyWriter)
 must be located on the same directory level as the novelyst_retablex project. 
 
+Copyright (c) 2023 Peter Triesberger
 For further information see https://github.com/peter88213/novelyst_retablex
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
