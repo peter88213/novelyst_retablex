@@ -10,7 +10,7 @@ A [novelyst](https://peter88213.github.io/novelyst/) plugin providing a csv rela
 
 If [novelyst](https://peter88213.github.io/novelyst/) is installed, the setup script auto-installs the *novelyst_retablex* plugin in the *novelyst* plugin directory.
 
-- The plugin adds a **Beziehungstabellen-Export** submenu to the *novelyst* **Export**-Menü, and a **Beziehungstabellen-Export-plugin Online-Hilfe** entry to the **Help**-Menü.
+- The plugin adds a **Beziehungstabellen-Exportieren** submenu to the *novelyst* **Exportieren**-Menü, and a **Beziehungstabellen-Exportieren-plugin Online-Hilfe** entry to the **Hilfe**-Menü.
 
 --- 
 
@@ -20,12 +20,12 @@ If [novelyst](https://peter88213.github.io/novelyst/) is installed, the setup sc
 
 ## Launch the exporter
 
-- Start the export from the main-Menü: **Export > Beziehungstabellen-Export**. A submenu opens.
+- Beginn the export from the main-Menü: **Exportieren > Beziehungstabellen-Exportieren**. A submenu opens.
 
-### "Beziehungstabellen-Export" Submenu entries
+### "Beziehungstabellen-Exportieren" Submenu entries
 
-- *csv* -- Export a comma-separated file, utf-8 encoded.
-- *csv (Excel)* -- Export a tab-separated file, utf-16 encoded.
+- *csv* -- Exportieren a comma-separated file, utf-8 encoded.
+- *csv (Excel)* -- Exportieren a tab-separated file, utf-16 encoded.
 
 ---
 
