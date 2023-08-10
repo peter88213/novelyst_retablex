@@ -1,4 +1,4 @@
-[Project homepage](https://peter88213.github.io/novelyst_retablex)
+[Project homepage](https://peter88213.github.io/novelyst_retablex) > Instructions for use
 
 --- 
 
