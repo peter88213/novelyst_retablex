@@ -12,6 +12,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 
 - The plugin adds a "Relationship table" submenu to the *novelyst* "Export" menu.
 - Export as "standard" csv, or a csv formatted for Excel.
+- The exported document is placed in the project folder.
 
 ## Requirements
 
@@ -19,9 +20,9 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 
 ## Download and install
 
-[Download the latest release (version 1.0.0)](https://github.com/peter88213/novelyst_retablex/raw/main/dist/novelyst_retablex_v1.0.0.zip)
+[Download the latest release (version 1.1.0)](https://github.com/peter88213/novelyst_retablex/raw/main/dist/novelyst_retablex_v1.1.0.zip)
 
-- Extract the "novelyst_retablex_v1.0.0" folder from the downloaded zipfile "novelyst_retablex_v1.0.0.zip".
+- Extract the "novelyst_retablex_v1.1.0" folder from the downloaded zipfile "novelyst_retablex_v1.1.0.zip".
 - Move into this new folder and launch **setup.pyw**. This installs the plugin for the local user.
 
 ---

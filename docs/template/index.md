@@ -12,6 +12,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 
 - The plugin adds a "Relationship table" submenu to the *novelyst* "Export" menu.
 - Export as "standard" csv, or a csv formatted for Excel.
+- The exported document is placed in the project folder.
 
 ## Requirements
 

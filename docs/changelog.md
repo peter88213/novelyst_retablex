@@ -4,6 +4,13 @@
 
 ## Changelog
 
+### v1.1.0
+
+Based on PyWriter v12.14.0
+Compatibility: novelyst v4.0 API
+
+- Open the exported document on demand.
+
 ### v1.0.0
 
 Based on PyWriter v12.4.1

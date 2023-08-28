@@ -26,6 +26,7 @@ from pywriter.converter.export_target_factory import ExportTargetFactory
 from pywriter.pywriter_globals import *
 from pywriter.config.configuration import Configuration
 from nvretablexlib.csv_table import CsvTable
+from pywriter.file.doc_open import open_document
 
 SETTINGS = dict(
     csv_arc_true='Ⓐ',
@@ -40,6 +41,7 @@ SETTINGS = dict(
 OPTIONS = dict(
     csv_row_numbers=True,
     csv_arc_points=True,
+    show_exported=True,
     )
 
 # Initialize localization.
@@ -126,6 +128,9 @@ class Plugin:
             self._ui.set_info_how(f'!{str(ex)}')
         else:
             self._ui.set_info_how(message)
+            if self.kwargs['show_exported']:
+                if self._ui.ask_yes_no(_('Document "{}" created. Open now?').format(norm_path(target.filePath))):
+                    open_document(target.filePath)
 
     def on_quit(self):
         """Actions to be performed when novelyst is closed.
